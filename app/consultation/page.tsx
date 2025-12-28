@@ -113,7 +113,7 @@ export default function Consultation() {
                     </div>
                     <div>
                       <div className="text-sm opacity-80">Téléphone</div>
-                      <div className="font-bold">+216 12 345 678</div>
+                      <div className="font-bold">0021628888612</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -130,7 +130,7 @@ export default function Consultation() {
 
               <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-background">
                 <Image
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2959210?auto=format&fit=crop&w=800&q=80"
+                  src="https://assets.biztimes.com/2021/07/shutterstock_278117648_WEB-1068x601.jpg"
                   alt="Team collaboration"
                   fill
                   className="object-cover"
