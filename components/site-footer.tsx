@@ -33,7 +33,7 @@ export function SiteFooter() {
             <ul className="space-y-2">
               <li>
                 <Link href="/ai-solutions" className="text-sm text-muted-foreground hover:text-primary">
-                  AI & Data
+                  IA & Data
                 </Link>
               </li>
               <li>
@@ -58,12 +58,12 @@ export function SiteFooter() {
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-sm text-muted-foreground hover:text-primary">
-                  About Us
+                  A Propos
                 </Link>
               </li>
               <li>
                 <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-primary">
-                  Case Studies
+                  Etudes de cas
                 </Link>
               </li>
               <li>
@@ -84,14 +84,14 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link href="tel:+21612345678" className="text-sm text-muted-foreground hover:text-primary">
-                  +216 12 345 678
+                  0021628888612
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} AIBC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AIBC. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
