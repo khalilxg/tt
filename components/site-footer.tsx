@@ -76,7 +76,7 @@ export function SiteFooter() {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Contact</h4>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">Tunis, Tunisie</li>
+              <li className="text-sm text-muted-foreground">France, Malte, Tunisie.</li>
               <li>
                 <Link href="mailto:contact@aibc.tn" className="text-sm text-muted-foreground hover:text-primary">
                   contact@aibc.tn
