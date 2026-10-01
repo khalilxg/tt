@@ -284,6 +284,7 @@ export default function Home() {
               alt="Technology Team Collaboration"
               width={1200}
               height={600}
+              priority
               className="rounded-lg shadow-2xl"
             />
           </motion.div>
