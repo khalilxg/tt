@@ -15,12 +15,12 @@ export default function CloudSolutions() {
 
       <main className="pt-24">
         {/* Hero */}
-        <section className="py-24 bg-[#0a101f] text-white relative overflow-hidden">
+        <section className="py-24 bg-[#1d0a10] text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-                <div className="flex items-center gap-2 text-secondary font-semibold mb-4">
+                <div className="flex items-center gap-2 text-red-300 font-semibold mb-4">
                   <ShieldCheck className="w-5 h-5" />
                   <span>SÉCURITÉ & PERFORMANCE</span>
                 </div>
@@ -30,8 +30,11 @@ export default function CloudSolutions() {
                   environnement cloud existant grâce à notre expertise.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button size="lg" className="bg-secondary text-black hover:bg-secondary/90 font-bold" asChild>
+                  <Button size="lg" className="bg-primary text-white hover:bg-primary/90 font-bold" asChild>
                     <Link href="/consultation">Consulter un expert Cloud</Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10" asChild>
+                    <Link href="#approche">Découvrir notre approche</Link>
                   </Button>
                 </div>
               </motion.div>
@@ -124,6 +127,64 @@ export default function CloudSolutions() {
                 >
                   <Zap className="w-5 h-5 text-accent" />
                   <span className="font-semibold">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="approche" className="py-24">
+          <div className="container mx-auto grid items-center gap-12 px-4 lg:grid-cols-2">
+            <div className="space-y-6">
+              <p className="text-sm font-bold uppercase tracking-widest text-primary">Continuité d'activité</p>
+              <h2 className="text-3xl font-bold md:text-4xl">Une infrastructure pensée pour les imprévus, pas seulement pour le jour du lancement</h2>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                La disponibilité dépend autant de la préparation que de la technologie. Nous vous aidons à clarifier
+                les services prioritaires, les dépendances, les objectifs de reprise et les responsabilités en cas
+                d'incident. Les sauvegardes doivent être protégées, testées et associées à une procédure que les
+                équipes peuvent réellement appliquer.
+              </p>
+              <p className="leading-relaxed text-muted-foreground">
+                Selon votre contexte, le plan peut inclure une migration progressive, une coexistence temporaire avec
+                l'existant, des tests de restauration et une supervision adaptée. Le périmètre est documenté avant
+                d'engager les opérations afin de réduire les interruptions et les coûts inattendus.
+              </p>
+            </div>
+            <div className="relative min-h-[340px] overflow-hidden rounded-lg border border-primary/20">
+              <Image
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85"
+                alt="Infrastructure informatique et équipements réseau"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
+              <p className="absolute bottom-6 left-6 max-w-md text-xl font-semibold text-white">
+                Des choix d'hébergement alignés sur vos données, vos risques et vos exigences métier.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#1d0a10] py-24 text-white">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto mb-12 max-w-3xl text-center">
+              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-red-300">Un cadre de décision clair</p>
+              <h2 className="mb-5 text-3xl font-bold md:text-4xl">Ce que nous cadrons avec votre équipe</h2>
+              <p className="text-lg leading-relaxed text-white/70">
+                Le bon modèle n'est pas forcément « tout privé » ou « tout public ». Nous comparons les contraintes
+                opérationnelles, réglementaires et financières pour définir une architecture cohérente avec votre
+                réalité, puis organisons la transition à un rythme maîtrisé.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              {[
+                { title: "Architecture et coûts", text: "Comprendre les charges, les dépendances et les besoins de capacité avant de choisir les composants." },
+                { title: "Accès et protection", text: "Définir les identités, les privilèges, le chiffrement, la journalisation et les procédures de revue." },
+                { title: "Exploitation et réversibilité", text: "Préciser qui surveille, qui intervient, comment les données sont restaurées et comment le dispositif peut évoluer." },
+              ].map((item) => (
+                <div key={item.title} className="border-t border-red-400/50 pt-6">
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-3 leading-relaxed text-white/70">{item.text}</p>
                 </div>
               ))}
             </div>

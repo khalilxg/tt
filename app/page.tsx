@@ -94,124 +94,42 @@ export default function Home() {
     },
   ]
 
-  const companies = [
-    { name: "Eurova", logo: "/logos/a.svg" },
-    { name: "Brtbank", logo: "/logos/a.svg" },
-    { name: "Access Banks", logo: "/logos/a.svg" },
-    { name: "Targote", logo: "/logos/a.svg" },
-    { name: "Paystock", logo: "/logos/a.svg" },
-    { name: "Tradevest", logo: "/logos/a.svg" },
-  ]
-
   const industries = [
     {
-      name: "Financial Services",
-      description: "Empowering banks, fintech, and insurance companies with secure, scalable solutions",
-      icon: () => (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="w-6 h-6"
-        >
-          <path d="M2 17a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V8.32a5 5 0 0 0-2.64-4.4L12 0 4.64 3.92A5 5 0 0 0 2 8.32Z" />
-          <path d="m6 12 6-3 6 3" />
-          <path d="M12 9v8" />
-        </svg>
-      ),
+      name: "Services financiers",
+      description: "Des plateformes et flux de données conçus autour de la confidentialité, de la traçabilité et de la continuité des services.",
+      icon: () => <Cloud className="h-6 w-6" />,
     },
     {
       name: "Santé",
-      description: "Avancée des soins aux patients avec des diagnostics alimentés par l'IA et des systèmes d'information de monitoring sécurisés",
-      icon: () => (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="w-6 h-6"
-        >
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-        </svg>
-      ),
+      description: "Des outils numériques qui soutiennent les équipes, protègent les informations sensibles et facilitent la circulation des données utiles.",
+      icon: () => <Brain className="h-6 w-6" />,
     },
     {
       name: "E-commerce",
-      description: "Créer des expériences d'achat fluides grâce à des plateformes évolutives et des systèmes de gestion des stocks intelligents",
-      icon: () => (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="w-6 h-6"
-        >
-          <circle cx="8" cy="21" r="1" />
-          <circle cx="19" cy="21" r="1" />
-          <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-        </svg>
-      ),
+      description: "Des parcours d'achat et outils de gestion capables de suivre les opérations, les stocks et l'évolution de la demande.",
+      icon: () => <Code className="h-6 w-6" />,
     },
   ]
 
   const caseStudies = [
     {
-      title: "Transformation du service client alimenté par l'IA",
+      title: "Cadrer un service client augmenté par l'IA",
       description:
-        "Comment nous avons aidé une banque française de premier plan à réduire le temps de réponse de 70 % et à améliorer les scores de satisfaction client de 35 % grâce à des chatbots IA.",
+        "Scénario de projet : structurer les connaissances, automatiser les demandes récurrentes et prévoir un transfert clair vers un conseiller lorsque la situation l'exige.",
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-      tags: ["AI", "Banking", "Customer Service"],
+      tags: ["IA", "Finance", "Relation client"],
       href: "/case-studies",
     },
     {
-      title: "Succès de migration vers le Cloud privé",
+      title: "Préparer une migration vers un cloud privé",
       description:
-        "Modernisation des systèmes d'un grand opérateur télécom, réduisant les coûts de 40 % et assurant une disponibilité de 99,99 %.",
+        "Scénario de projet : cartographier les dépendances, définir les exigences de résidence et de reprise, puis planifier une transition progressive des services prioritaires.",
       image:
         "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-      tags: ["Cloud", "Télécoms", "Transformation digitale"],
+      tags: ["Cloud privé", "Infrastructure", "Continuité"],
       href: "/case-studies",
-    },
-  ]
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      title: "Small Business Owner",
-      quote:
-        "Depuis l'intégration de cette solution à notre flux de travail, nous constatons une nette amélioration de l'efficacité et de la collaboration.",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
-      href: "/testimonials/sarah-johnson",
-    },
-    {
-      name: "David Patel",
-      title: "Project Manager",
-      quote:
-        "J'ai évalué de nombreuses solutions dans ce domaine ; celle-ci se distingue par son design intuitif et sa fonctionnalité complète.",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80",
-      href: "/testimonials/david-patel",
-    },
-    {
-      name: "Emily Carter",
-      title: "Operations Manager",
-      quote:
-        "L'outil que nous avons adopté a dépassé nos attentes, apportant des insights précieux et un soutien essentiel à la croissance de notre activité.",
-      image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q80",
-      href: "/testimonials/emily-carter",
     },
   ]
 
@@ -376,27 +294,15 @@ export default function Home() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-16 bg-gradient-to-b from-background via-background/50 to-[#020817]/50 relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-b from-background via-background/50 to-[#220b11]/50 relative overflow-hidden">
         <div className="container mx-auto">
-          <h2 className="text-center text-lg font-medium text-muted-foreground mb-12 px-4">
-            Approuvée par des entreprises de premier plan
+          <h2 className="text-center text-lg font-medium text-muted-foreground mb-8 px-4">
+            Des enjeux technologiques concrets, dans des secteurs exigeants
           </h2>
-          <div className="relative w-full overflow-hidden gradient-mask">
-            <div className="flex space-x-16 animate-scroll">
-              {/* First set of logos */}
-              {[...companies, ...companies].map((company, index) => (
-                <div key={`${company.name}-${index}`} className="flex items-center justify-center min-w-[160px] group">
-                  <div className="relative w-32 h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                    <Image
-                      src={company.logo || "/placeholder.svg"}
-                      alt={company.name}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="container mx-auto flex flex-wrap justify-center gap-x-12 gap-y-4 px-4 text-sm font-semibold uppercase tracking-wide text-primary">
+            {["Finance", "Industrie", "Santé", "Commerce", "Services"].map((sector) => (
+              <span key={sector}>{sector}</span>
+            ))}
           </div>
         </div>
       </section>
@@ -445,7 +351,7 @@ export default function Home() {
       </section>
 
       {/* Industries Section */}
-      <section className="py-20 bg-gradient-to-b from-background via-[#020817] to-[#020817] relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-b from-background via-[#220b11] to-[#16090c] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/screenshot-202025-02-18-20at-209.png')] opacity-5 bg-cover bg-center" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -483,11 +389,11 @@ export default function Home() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-20 bg-gradient-to-b from-[#020817] via-background to-background">
+      <section className="py-20 bg-gradient-to-b from-[#16090c] via-background to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Études de cas</h2>
-            <p className="text-lg text-muted-foreground">Voir comment nous avons aidé les entreprises dans leur transformation digitale</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Exemples de projets</h2>
+            <p className="text-lg text-muted-foreground">Des scénarios illustratifs pour montrer comment nous abordons des enjeux métier et technologiques.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {caseStudies.map((study, index) => (
@@ -535,51 +441,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-b from-background via-[#020817] to-[#020817] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/screenshot-202025-02-18-20at-209.png')] opacity-5 bg-cover bg-center" />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Ce que disent nos clients</h2>
-            <p className="text-lg text-gray-400">
-              Découvrez ce que nos clients satisfaits ont à dire sur leurs expériences avec nos solutions.
+      <section className="py-24 bg-gradient-to-b from-background via-[#220b11] to-background">
+        <div className="container mx-auto grid items-center gap-12 px-4 lg:grid-cols-2">
+          <div className="space-y-6">
+            <p className="text-sm font-bold uppercase tracking-widest text-primary">Une collaboration lisible</p>
+            <h2 className="text-3xl font-bold md:text-4xl">Un partenaire qui reste responsable après la mise en ligne</h2>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              Un projet numérique ne se résume pas à livrer du code. Il doit s'intégrer aux habitudes de vos équipes,
+              protéger les données qu'il manipule et rester compréhensible à mesure que votre activité évolue. Nous
+              cadrons ces sujets dès le départ, puis nous gardons un dialogue régulier avec vos interlocuteurs métier et IT.
+            </p>
+            <ul className="space-y-3 text-muted-foreground">
+              <li>• Des objectifs, responsabilités et critères d'acceptation définis ensemble.</li>
+              <li>• Des démonstrations régulières pour arbitrer tôt et éviter les mauvaises surprises.</li>
+              <li>• Une passation documentée pour que vos équipes gardent la maîtrise de la solution.</li>
+            </ul>
+            <Button asChild className="bg-primary hover:bg-primary/90">
+              <Link href="/consultation">Parler de votre contexte <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            </Button>
+          </div>
+          <div className="relative min-h-[320px] overflow-hidden rounded-lg border border-primary/20">
+            <Image
+              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+              alt="Équipe projet échangeant autour d'un écran"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            <p className="absolute bottom-6 left-6 max-w-md text-xl font-semibold text-white">
+              La bonne technologie commence par une compréhension précise de votre métier.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative"
-              >
-                <div className="relative p-8 rounded-2xl bg-[#0a101f]/40 border border-gray-800/50 backdrop-blur-sm hover:bg-[#0a101f]/60 transition-all duration-300">
-                  <div className="mb-6 flex items-center gap-4">
-                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-800/50">
-                      <Image
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-white">{testimonial.name}</h3>
-                      <p className="text-sm text-gray-400">{testimonial.title}</p>
-                    </div>
-                  </div>
-                  <blockquote className="text-gray-300 leading-relaxed">"{testimonial.quote}"</blockquote>
-                </div>
-              </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-[#16090c] text-white">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-red-300">De l'idée à l'usage quotidien</p>
+            <h2 className="mb-5 text-3xl font-bold md:text-4xl">Un parcours de projet conçu pour réduire le risque</h2>
+            <p className="text-lg leading-relaxed text-white/70">
+              Vous gardez de la visibilité sur les décisions, le budget et les prochaines étapes. Le périmètre se
+              construit autour de vos priorités réelles, pas autour d'une démonstration technologique sans débouché.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+              { number: "01", title: "Comprendre", text: "Nous cartographions vos processus, vos utilisateurs, vos contraintes de sécurité et les systèmes déjà en place." },
+              { number: "02", title: "Construire", text: "Nous proposons une architecture proportionnée, puis avançons par étapes visibles avec validation de vos équipes." },
+              { number: "03", title: "Faire évoluer", text: "Après le lancement, nous suivons l'adoption, traitons les retours et priorisons les améliorations utiles." },
+            ].map((step) => (
+              <div key={step.number} className="border-t border-red-400/50 pt-6">
+                <span className="text-sm font-bold text-red-300">{step.number}</span>
+                <h3 className="mt-4 text-2xl font-semibold">{step.title}</h3>
+                <p className="mt-3 leading-relaxed text-white/70">{step.text}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-[#020817] via-background to-background">
+      <section className="py-20 bg-gradient-to-b from-[#16090c] via-background to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Prêt à transformer votre entreprise ?</h2>

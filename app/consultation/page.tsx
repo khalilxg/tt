@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { motion } from "framer-motion"
@@ -23,9 +23,9 @@ export default function Consultation() {
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  useState(() => {
+  useEffect(() => {
     setMounted(true)
-  })
+  }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
     try {
@@ -76,8 +76,9 @@ export default function Consultation() {
               Planifiez votre <span className="text-primary">Consultation Digitale</span>
             </motion.h1>
             <p className="text-xl text-muted-foreground">
-              Discutons de vos projets d'IA, de Cloud ou d'Automatisation. Notre équipe d'experts est à votre écoute
-              pour concevoir la solution idéale.
+              Discutons de vos projets d'IA, de Cloud ou d'Automatisation. Notre équipe est à votre écoute pour
+              comprendre vos contraintes, préciser les options possibles et identifier une première étape utile,
+              sans vous imposer une solution prédéfinie.
             </p>
           </div>
 
@@ -220,6 +221,29 @@ export default function Consultation() {
               </Card>
             </motion.div>
           </div>
+
+          <section className="mt-24 border-t border-primary/20 pt-16">
+            <div className="mx-auto mb-12 max-w-3xl text-center">
+              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-primary">Un premier échange utile</p>
+              <h2 className="mb-5 text-3xl font-bold">Vous n'avez pas besoin d'un cahier des charges complet</h2>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Quelques éléments sur votre situation suffisent pour préparer la conversation. Nous pouvons préciser
+                ensemble le problème à résoudre, les personnes concernées et les contraintes à prendre en compte.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              {[
+                { title: "Votre contexte", detail: "Présentez votre activité, vos utilisateurs et la difficulté qui vous a conduit à chercher une solution." },
+                { title: "Vos contraintes", detail: "Mentionnez les outils déjà en place, les exigences de sécurité, les délais ou les dépendances connues." },
+                { title: "La prochaine étape", detail: "Nous identifions les informations manquantes et le format de cadrage adapté à la maturité de votre projet." },
+              ].map((item) => (
+                <div key={item.title} className="border-t border-primary/40 pt-6">
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-3 leading-relaxed text-muted-foreground">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
 

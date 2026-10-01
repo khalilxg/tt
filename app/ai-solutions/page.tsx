@@ -173,6 +173,63 @@ export default function AISolutions() {
             </div>
           </div>
         </section>
+
+        <section className="py-24">
+          <div className="container mx-auto grid items-center gap-12 px-4 lg:grid-cols-2">
+            <div className="relative min-h-[340px] overflow-hidden rounded-lg border border-primary/20">
+              <Image
+                src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=85"
+                alt="Écran de développement et d'analyse de données"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <p className="absolute bottom-6 left-6 max-w-sm text-lg font-semibold text-white">
+                Une IA utile s'intègre dans le travail existant et s'évalue dans la durée.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <p className="text-sm font-bold uppercase tracking-widest text-primary">Concevoir pour l'usage réel</p>
+              <h2 className="text-3xl font-bold md:text-4xl">Un cas d'usage clair avant de choisir un modèle</h2>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                Nous partons d'une tâche concrète : retrouver une information, qualifier une demande, détecter un
+                événement ou anticiper une variation. Nous vérifions ensuite la qualité et la disponibilité des données,
+                les intégrations nécessaires et le niveau de contrôle attendu par vos équipes.
+              </p>
+              <p className="leading-relaxed text-muted-foreground">
+                Cette étape évite de lancer un projet trop vaste ou de mettre en production un outil qui ne répond pas
+                aux contraintes du terrain. Un prototype limité permet de tester l'utilité, la précision et les cas
+                d'échec avant tout déploiement à plus grande échelle.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#1d0a10] py-24 text-white">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto mb-12 max-w-3xl text-center">
+              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-red-300">Confiance et maîtrise</p>
+              <h2 className="mb-5 text-3xl font-bold md:text-4xl">L'IA doit rester explicable, contrôlable et utile</h2>
+              <p className="text-lg leading-relaxed text-white/70">
+                Les données sensibles, les réponses incertaines et les erreurs possibles doivent être traitées dès la
+                conception. Nous définissons avec vous les limites du système et le rôle de validation humaine adapté
+                au niveau de risque.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              {[
+                { title: "Données maîtrisées", text: "Clarifier quelles données peuvent être utilisées, où elles sont hébergées, qui y accède et combien de temps elles sont conservées." },
+                { title: "Réponses vérifiables", text: "Mettre en place des sources de référence, des tests représentatifs et des mécanismes d'escalade lorsque le système est incertain." },
+                { title: "Suivi après lancement", text: "Observer la qualité dans le temps, recueillir les retours métier et réévaluer le système lorsque les données ou les besoins changent." },
+              ].map((item) => (
+                <div key={item.title} className="border-t border-red-400/50 pt-6">
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-3 leading-relaxed text-white/70">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />

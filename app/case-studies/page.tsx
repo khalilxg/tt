@@ -11,26 +11,26 @@ import { ArrowUpRight, CheckCircle2 } from "lucide-react"
 
 const caseStudies = [
   {
-    title: "Migration Cloud Privé pour une Institution Financière",
-    client: "Confidential Bank",
-    challenge: "Besoin de souveraineté totale sur les données clients tout en modernisant l'accès aux services.",
-    result: "Souveraineté 100% assurée, latence réduite de 30% et conformité totale avec les régulations locales.",
+    title: "Préparer une migration cloud pour les services financiers",
+    client: "Scénario illustratif : services financiers",
+    challenge: "Des applications historiques et des données sensibles rendent les décisions d'hébergement, de reprise et de contrôle des accès particulièrement importantes.",
+    result: "Définir une architecture cible, documenter les dépendances et convenir d'indicateurs de validation avant de planifier la migration.",
     image: "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&w=1200&q=80",
     tags: ["Cloud Privé", "Finance", "Souveraineté"],
   },
   {
-    title: "Système de Surveillance IA par Computer Vision",
-    client: "Site Industriel Majeur",
-    challenge: "Sécurisation d'un périmètre de 50 hectares avec détection automatique d'anomalies.",
-    result: "Détection d'intrusion réduite à < 5 secondes, réduction des fausses alertes de 85%.",
+    title: "Étudier la vision par ordinateur sur un site industriel",
+    client: "Scénario illustratif : site industriel",
+    challenge: "Les équipes doivent repérer des événements prioritaires dans des zones étendues sans être submergées par des alertes peu pertinentes.",
+    result: "Valider les conditions de captation, tester des événements représentatifs et définir le traitement humain des alertes avant un déploiement élargi.",
     image: "https://images.unsplash.com/photo-1557853197-aefb550b6fdc?auto=format&fit=crop&w=1200&q=80",
     tags: ["AI", "Computer Vision", "Sécurité"],
   },
   {
-    title: "Automatisation End-to-End de la Chaîne Logistique",
-    client: "Distributeur Régional",
-    challenge: "Erreurs de saisie manuelles et manque de visibilité en temps réel sur les stocks.",
-    result: "Zéro erreur de saisie, visibilité 100% en temps réel, gain de productivité de 40%.",
+    title: "Améliorer la visibilité d'une chaîne logistique",
+    client: "Scénario illustratif : distribution",
+    challenge: "Les mises à jour manuelles, les outils dispersés et les écarts de stock compliquent le suivi des opérations.",
+    result: "Cartographier les flux d'information, automatiser les échanges répétitifs et mesurer la qualité des données avec les équipes opérationnelles.",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     tags: ["Web & Cloud", "Logistique", "Automation"],
   },
@@ -44,9 +44,11 @@ export default function CaseStudies() {
       <main className="pt-24 pb-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Études de Cas Avancées</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Scénarios de transformation</h1>
             <p className="text-xl text-muted-foreground">
-              Découvrez comment AIBC accompagne ses clients dans leurs défis technologiques les plus complexes.
+              Ces scénarios illustratifs présentent des enjeux fréquents en transformation numérique. Ils ne constituent
+              pas des références client ni des résultats mesurés : chaque mission est cadrée selon son contexte, ses
+              contraintes et ses propres indicateurs de réussite.
             </p>
           </div>
 
@@ -76,8 +78,8 @@ export default function CaseStudies() {
                       <p className="text-muted-foreground">{study.challenge}</p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-accent" /> Le Résultat
+                        <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-accent" /> Une cible de travail
                       </h4>
                       <p className="text-muted-foreground">{study.result}</p>
                     </div>
@@ -103,6 +105,31 @@ export default function CaseStudies() {
               </motion.div>
             ))}
           </div>
+
+          <section className="mt-24 border-t border-primary/20 pt-16">
+            <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+              <div>
+                <p className="mb-3 text-sm font-bold uppercase tracking-widest text-primary">Au-delà de la technologie</p>
+                <h2 className="text-3xl font-bold">Les résultats commencent par les bonnes questions</h2>
+              </div>
+              <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
+                <p>
+                  Une architecture performante n'a de valeur que si elle répond à une contrainte opérationnelle claire.
+                  Avant de recommander une solution, nous cherchons à comprendre les utilisateurs concernés, les
+                  systèmes à connecter, les exigences de sécurité et le coût du statu quo.
+                </p>
+                <p>
+                  Pour évaluer un projet similaire au vôtre, nous pouvons commencer par un échange de cadrage :
+                  périmètre, dépendances, risques, options possibles et critères de réussite. Vous repartez avec une
+                  lecture plus structurée des prochaines décisions, même si le projet n'est pas encore défini dans
+                  tous ses détails.
+                </p>
+                <Button asChild className="bg-primary hover:bg-primary/90">
+                  <Link href="/consultation">Échanger sur votre projet <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
+                </Button>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
 
