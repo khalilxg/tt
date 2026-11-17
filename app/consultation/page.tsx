@@ -131,7 +131,7 @@ export default function Consultation() {
 
               <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-background">
                 <Image
-                  src="https://assets.biztimes.com/2021/07/shutterstock_278117648_WEB-1068x601.jpg"
+                  src="/teamred.jpg"
                   alt="Team collaboration"
                   fill
                   className="object-cover"
