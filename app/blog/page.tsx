@@ -30,7 +30,7 @@ const blogPosts = [
   {
     title: "Automatisation des processus RH : Un gain de productivité mesurable",
     excerpt: "L'automatisation RH fonctionne mieux lorsqu'elle retire des tâches répétitives sans rendre les exceptions plus difficiles à gérer. Nous détaillons les étapes pour repérer un processus adapté et mesurer son évolution.",
-    image: "/hr.jpg",
+    image: "/rhh.jpg",
     date: "02 Mai 2025",
     readTime: "6 min",
     category: "Automation",
