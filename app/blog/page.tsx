@@ -22,7 +22,7 @@ const blogPosts = [
   {
     title: "Pourquoi le Cloud Privé devient un standard pour les banques",
     excerpt: "Souveraineté, continuité et maîtrise des accès sont des critères importants, mais ils ne suffisent pas à eux seuls à choisir une architecture. Cet article propose une grille de lecture pour comparer les options.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85",
+    image: "/cloud.png",
     date: "10 Mai 2025",
     readTime: "12 min",
     category: "Cloud",
